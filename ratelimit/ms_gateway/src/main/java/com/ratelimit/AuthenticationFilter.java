@@ -19,21 +19,17 @@ import reactor.core.publisher.Mono;
 public class AuthenticationFilter implements GlobalFilter {
 
 
+  private static final String AUTHORIZATION_HEADER = "Authorization";
   @Autowired
   UsersTokenRepository usersTokenRepository;
-
   @Autowired
   UsersRepository usersRepository;
-
-
-  private static final String AUTHORIZATION_HEADER = "Authorization";
-
 
   @Override
   public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
     ServerHttpRequest request = exchange.getRequest();
 
-    if(!request.getHeaders().containsKey("Authorization")){
+    if (!request.getHeaders().containsKey("Authorization")) {
       return getErrorResponse(exchange).setComplete();
     } else {
       Optional<UserToken> authAccessToken =
@@ -50,7 +46,7 @@ public class AuthenticationFilter implements GlobalFilter {
 
   }
 
-  private ServerHttpResponse getErrorResponse(ServerWebExchange exchange){
+  private ServerHttpResponse getErrorResponse(ServerWebExchange exchange) {
     ServerHttpResponse response = exchange.getResponse();
     response.setStatusCode(HttpStatus.FORBIDDEN);
     return response;
