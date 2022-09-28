@@ -26,6 +26,7 @@ public class MS1Controller {
     Ms2Client service = retrofit.create(Ms2Client.class);
 
     Call<ResponseString> callSync = service.getms2(token);
+    
     Response<ResponseString> response = callSync.execute();
     return response.body()+"ms1";
   }
