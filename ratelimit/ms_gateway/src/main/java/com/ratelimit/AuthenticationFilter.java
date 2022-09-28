@@ -39,6 +39,7 @@ public class AuthenticationFilter implements GlobalFilter {
       if (!authAccessToken.isPresent()) {
         return getErrorResponse(exchange).setComplete();
       }
+      exchange.getRequest().mutate().header("token",request.getHeaders().get(AUTHORIZATION_HEADER).get(0));
 
       return chain.filter(exchange);
 
