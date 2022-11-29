@@ -37,3 +37,41 @@
   background-color: red;
   color: white;
 }
+
+.container{
+  height: 2444px;
+  width: 100vw;
+  margin: 0px;
+}
+.li{
+  display: inline-block;
+  margin: 25px 140px;
+}
+.header {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  text-decoration: underline;
+  display: inline-block;
+  color: white;
+}
+.left1{
+  height: 70%;
+  display: inline-block;
+  width: 50%;
+  background-color: red;
+}
+
+.right1{
+  height: 70%;
+  display: inline-block;
+  width: 50%;
+  background-color: blue;
+}
+
+.footer{
+  height: 20%;
+  text-align: center;
+  background-color: aqua;
+  color: white;
+}
