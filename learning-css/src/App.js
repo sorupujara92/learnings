@@ -13,25 +13,29 @@ function App() {
     //   <footer className='footer'>copyright &copy ddd</footer>
     //   </div>
 
-    <div className='container'>
-      <header className='header'>
+    // <div className='main'>
+    /* <header className='header'>
+      <div className='logo'>logo</div>
 
-        <ul>
-          <li className='li'>home</li>
-          <li className='li'>about</li>
-          <li className='li'>contact</li>
+          <div className='home'>home</div>
+          <div className='about'>about</div>
+          <div className='contact'>contact</div>
 
-        </ul>
-      </header>
 
-      <div className='left1'>lorem34</div>
+      </header> */
+<div className='container'>
+      <div className='box1'>box1</div>
       
       
-      <div className='right1'>lorem31</div>
+      <div className='box2'>box2</div>
 
 
-      <footer className='footer'> copy right</footer>
+      <div className='box3'> box3</div>
+
+      <div className='box4'> box4</div>
+
     </div>
+    // </div>
   );
 }
 

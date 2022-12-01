@@ -20,17 +20,7 @@
 .App1{
   height: 4444px;
 }
-.main{
-  color : red;
-  
-  /* background-color: black; */
-  text-decoration: underline;
-  text-transform: lowercase;
-  text-align: center;
-  width: 100%;
-  height: 400px;
-  line-height: 22px;
-}
+
 
 .footer{
   text-align: center;
@@ -38,22 +28,45 @@
   color: white;
 }
 
-.container{
-  height: 2444px;
-  width: 100vw;
-  margin: 0px;
-}
+
 .li{
   display: inline-block;
   margin: 25px 140px;
 }
+/* .abc{
+width: 20%;
+}
+
+.def {
+  width: 20%;
+
+} */
+.home {
+margin-right: 2%;
+}
+
+.logo{
+  margin-right: 2%;
+
+}
+.about{
+  margin-right: 2%;
+
+}
+.contact {
+  margin-right: 2%;
+
+}
 .header {
-  height: 10%;
+  height: 20%;
   width: 100%;
   background-color: black;
   text-decoration: underline;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: white;
+  top:0;
 }
 .left1{
   height: 70%;
@@ -61,7 +74,9 @@
   width: 50%;
   background-color: red;
 }
-
+.main{
+  height: 100vh;
+}
 .right1{
   height: 70%;
   display: inline-block;
@@ -74,4 +89,91 @@
   text-align: center;
   background-color: aqua;
   color: white;
+}
+/* 
+
+.container{
+  height: 80%;
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+.box1{
+  width: 344px;
+  height: 300px;
+  color: white;
+  background-color: red;
+}
+
+
+.box2{
+  width: 344px;
+  height: 300px;
+  color: white;
+  background-color: black;
+}
+
+.box3{
+  width: 344px;
+  height: 300px;
+  color: white;
+  background-color: blue;
+}
+
+.box4{
+  width: 344px;
+  height: 300px;
+  color: white;
+  background-color: yellow;
+} */
+
+
+
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-gap: 120px 20px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 434px 834px;
+  justify-items: center;
+  align-items: flex-end;
+
+}
+
+.box1{
+  width: 40%;
+  height: 300px;
+  color: white;
+  border: 2px solid red;
+  background-color: red;
+}
+
+
+.box2{
+  width: 40%;
+  height: 300px;
+  color: white;
+  background-color: black;
+}
+
+.box3{
+  width: 40%;
+  height: 300px;
+  color: white;
+  background-color: blue;
+}
+
+.box4{
+  width: 40%;
+  height: 300px;
+  color: black;
+  background-color: yellow;
 }
